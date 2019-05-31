@@ -3,9 +3,19 @@ import React from 'react';
 
 function App() {
   return (
-    <div>
-      Teste
-    </div>
+    <ContainerIndex>
+      <Logo />
+      <ButtomStart>
+        Star Game
+      </ButtomStart>
+      <CardCategory />
+      <Cardinfo>
+      
+      </Cardinfo>  
+      <ButtomInfo>
+      
+      </ButtomInfo>  
+    </ContainerIndex>
   );
 }
 
