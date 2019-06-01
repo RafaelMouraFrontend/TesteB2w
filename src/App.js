@@ -1,22 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react'
 
+class App extends Component {
+  constructor () {
+    super()
+  }
 
-function App() {
-  return (
-    <ContainerIndex>
-      <Logo />
-      <ButtomStart>
-        Star Game
-      </ButtomStart>
-      <CardCategory />
-      <Cardinfo>
-      
-      </Cardinfo>  
-      <ButtomInfo>
-      
-      </ButtomInfo>  
-    </ContainerIndex>
-  );
+  render(){
+    return (
+      <ContainerIndex>
+         {props.children}
+      </ContainerIndex>
+    );
+  }
 }
 
 export default App;
