@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
+
 import Home from './screen/Home';
 import Categories from './screen/Categories';
+import Card from './screen/Card';
 import background from './assets/imgs/background.jpg'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -30,24 +32,21 @@ export const GlobalStyle = createGlobalStyle`
 
 const ContainerIndex = styled.div `
   background: url(${background});
+  background-size: cover;
+  height:100vh;
 `;
 
-class App extends Component {
-
-
-  render(){
-    return (
+export default function App() {
+     return (
       <Router>
         <GlobalStyle />
         <ContainerIndex>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/categories" component={Categories} />
+          <Route path="/planet" component={Card} />
         </Switch>
         </ContainerIndex>
       </Router>
-    );
-  }
+    )
 }
-
-export default App;

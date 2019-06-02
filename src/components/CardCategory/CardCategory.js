@@ -1,16 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const boxCat = styled.div `
-  width: 200px;
-  height: 200px;
-`;
+import BoxCat from '../style/boxCat'
+import { Link } from 'react-router-dom'
 
 
   const CardCategory = () => (
-    <boxCat>
-      Categoria
-    </boxCat>
+    <BoxCat>
+      
+      <Link className="card" to="/planet">
+        planet
+      </Link>
+      
+    </BoxCat>
   );
   
 export default CardCategory

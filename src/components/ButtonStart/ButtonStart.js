@@ -5,7 +5,7 @@ import Start from '../style/ButtonStart'
   const ButtomStart = ({props}) => (
 
   <Link to="/categories">
-      <Start>start</Start>
+      <Start>Start Game</Start>
   </Link>
 
   );

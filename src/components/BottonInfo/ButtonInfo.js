@@ -1,9 +1,17 @@
 import React from 'react';
+import Buttons from '../style/Buttons'
 
-  const ButtonInfo = () => (
-    <ButtonInfo>
+  const ButtonInfo = ({ nextPlanet }) => (
+    <Buttons>
+      <button>
+        Home
+      </button> 
+
+      <button onClick={ nextPlanet }>
+        Next
+      </button>
       
-    </ButtonInfo>  
+    </Buttons>  
   );
   
 export default ButtonInfo

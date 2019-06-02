@@ -1,9 +1,10 @@
 import React from 'react';
 
-  const CardInfo = () => (
-    <CardiInfo>
-      
-    </CardiInfo>  
+  const CardInfo = ({Info}) => (
+    <div>
+      {Info.name}
+      teste
+    </div>  
   );
   
 export default CardInfo
