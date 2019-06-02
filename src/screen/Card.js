@@ -9,7 +9,7 @@ export default function Card() {
   },[])
 
   const [items, setItens] = useState([])
-
+  
   const fetchItems = async () => {
     let id = numberRandon(61)
     const response = await fetch(
@@ -17,8 +17,9 @@ export default function Card() {
     );
     const items = await response.json()
     setItens(items)
-
   }
+  const nextPlanet = () => fetchItems();
+  
   const numberRandon = num => {
     let number = Math.floor(Math.random() * num + 1)
     if(number === 0 || number === undefined)
@@ -32,7 +33,7 @@ export default function Card() {
         <div className="card">
         <h1>{items.name}</h1>
         </div>             
-      <ButtonInfo/>
+      <ButtonInfo nextPlanet={nextPlanet}/>
     </BoxCard>
   )
 }
