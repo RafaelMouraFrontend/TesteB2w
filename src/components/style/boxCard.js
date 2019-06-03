@@ -8,6 +8,9 @@ const BoxCard= styled.div`
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    .loading{
+        max-width:400px;
+    }
     .card{
         width: 100%;
         border: 2px solid #FFE81F;
@@ -21,6 +24,7 @@ const BoxCard= styled.div`
             text-align: center;
             line-height: 1.5;
             padding-top: 10px;
+            border: 1px solid #FFE81F;
         }  
         ul{
             padding: 0;

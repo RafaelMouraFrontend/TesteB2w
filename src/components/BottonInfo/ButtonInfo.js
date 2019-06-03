@@ -5,10 +5,10 @@ import Buttons from '../style/Buttons'
   const ButtonInfo = ({ nextPlanet }) => (
     <Buttons>
       <button>
-      <Link to="/">Home</Link>
+      <Link to="/" className="link">Home</Link>
       </button> 
 
-      <button onClick={ nextPlanet }>
+      <button onClick={ nextPlanet } className="raise">
         Next
       </button>
       
