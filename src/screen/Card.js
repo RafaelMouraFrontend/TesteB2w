@@ -7,6 +7,7 @@ export default function Card() {
 
   const [items, setItens] = useState([])
   const [isLoading, setIsLoading] = useState(false);
+  const [films, setFilms] = useState([])
 
   const fetchItems =  React.useCallback(async () => {
     setIsLoading(true);
@@ -17,6 +18,8 @@ export default function Card() {
     const items = await response.json()
     items.name === 'unknown' ? fetchItems() : setItens(items)
     setIsLoading(false)
+    const films = items.films.length
+    setFilms(films)
     
   },[])
 
@@ -49,6 +52,7 @@ export default function Card() {
           <li><span>Climate:</span> {items.climate}</li>
           <li><span>Terrains:</span> {items.terrain}</li>
         </ul>
+        <p>Films:{films}</p>
       </div>  
       )}
            
