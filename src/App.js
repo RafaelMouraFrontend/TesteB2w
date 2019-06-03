@@ -10,7 +10,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Roboto:300,500|Titillium+Web:400,600,700');
+ @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Teko:400,600,700&display=swap');
   html {
     box-sizing: border-box;
     font-size: 10px;
@@ -37,6 +38,7 @@ const ContainerIndex = styled.div `
 `;
 
 export default function App() {
+  
      return (
       <Router>
         <GlobalStyle />

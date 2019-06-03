@@ -11,7 +11,30 @@ const BoxCard= styled.div`
     .card{
         width: 100%;
         border: 2px solid #FFE81F;
-        color: #fff;   
+        color: #fff; 
+        h1{
+            font-family: 'Teko',sans-serif;
+            font-size: 4rem;
+            background: #FFE81F;
+            color: #F60505;
+            margin: 0;
+            text-align: center;
+            line-height: 1.5;
+            padding-top: 10px;
+        }  
+        ul{
+            padding: 0;
+        }
+        li{
+            font-family: 'Roboto', sans-serif;
+            list-style: none;
+            text-align: center;
+            span{
+                font-weight: 700;
+            }
+           
+        }
+        
     }
    
 `;
