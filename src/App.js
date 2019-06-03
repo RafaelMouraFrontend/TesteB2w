@@ -33,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export default function App() {
-
+    
      return (
       <Router>
         <GlobalStyle />
