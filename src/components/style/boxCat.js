@@ -7,6 +7,8 @@ const BoxCat = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 99999;
+    position: relative;
        
     .card{
         background: transparent;

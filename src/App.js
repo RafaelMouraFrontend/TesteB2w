@@ -1,12 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
-
 import Home from './screen/Home';
 import Categories from './screen/Categories';
 import Card from './screen/Card';
-import background from './assets/imgs/background.jpg'
+import ContainerIndex from './components/style/background'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
@@ -35,18 +32,15 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const ContainerIndex = styled.div `
-  background: url(${background});
-  background-size: cover;
-  height:100vh;
-`;
-
 export default function App() {
-  
+
      return (
       <Router>
         <GlobalStyle />
         <ContainerIndex>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/categories" component={Categories} />

@@ -11,6 +11,8 @@ const Container = styled.div `
   flex-direction: column; 
   text-align: center;
   justify-content: center;
+  z-index: 99999;
+  position: relative;
 `;
 
   const Home = () => (

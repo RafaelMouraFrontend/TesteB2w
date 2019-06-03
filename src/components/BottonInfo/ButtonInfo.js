@@ -4,11 +4,13 @@ import Buttons from '../style/Buttons'
 
   const ButtonInfo = ({ nextPlanet }) => (
     <Buttons>
-      <button>
-      <Link to="/" className="link">Home</Link>
-      </button> 
+      <Link to="/" className="link">
+        <button className="btn btn-4">
+          Home
+        </button> 
+      </Link>
 
-      <button onClick={ nextPlanet } className="raise">
+      <button onClick={ nextPlanet } className="btn btn-4">
         Next
       </button>
       

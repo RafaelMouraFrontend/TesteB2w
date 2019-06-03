@@ -5,9 +5,10 @@ const BoxCard= styled.div`
     height: 70%;
     margin: 0 auto;
     background: transparent;
-    position: relative;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 99999;
+    position: relative;
     .loading{
         max-width:400px;
     }
