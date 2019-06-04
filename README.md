@@ -58,8 +58,9 @@ http://localhost:3000/
 ```
 
 ## Deployment
-
-Caso só queira jogar e ver o resultado do projeto visualmente acesse o link
+O Continuous Deployment foi feito dentro do Netlify
+Caso só queira jogar e ver o resultado do projeto visualmente acesse o link:
+[starwarsgameb2w.netlify.com](https://starwarsgameb2w.netlify.com/) 
 
 ## Built With
 * Html
