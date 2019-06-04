@@ -1,12 +1,12 @@
 <h1 align="center">
   <br>
-  <a href="https://i.ibb.co/MnVtjyG/github.png" alt="Markdownify" width="200"></a>
+  <a href="http://somos.b2wdigital.com/bit/"><img src="https://i.ibb.co/MnVtjyG/github.png" alt="Star Wars Test" width="200"></a>
   <br>
   Star Wars Game B2W
   <br>
 </h1>
 
-<h4 align="center">Teste Técnico desenvolvido para a <a href="http://somos.b2wdigital.com/bit/" target="_blank">B2W</a>.</h4>
+<h4 align="center">Desafio Técnico desenvolvido para a <a href="http://somos.b2wdigital.com/bit/" target="_blank">B2W</a>.</h4>
 
 
 <p align="center">
