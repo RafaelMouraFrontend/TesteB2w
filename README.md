@@ -28,13 +28,9 @@ Esse game ajuda a aprimorar seus conhecimentos sobre Star Wars, um jogo de adivi
 
 Será necessário a instação do Node e Github em sua maquina
 
-* [Node](http://www.dropwizard.io/1.0.2/docs/) 
+- * [Node](http://www.dropwizard.io/1.0.2/docs/) 
 
-* [Github](http://www.dropwizard.io/1.0.2/docs/) 
-
-```
-Give examples
-```
+- * [Github](http://www.dropwizard.io/1.0.2/docs/) 
 
 ### Rodando o projeto
 
@@ -44,34 +40,36 @@ Após a instação do node e github vamos precisar rodar alguns comandos no seu 
 
 ```
 git clone https://github.com/RafaelMouraFrontend/TesteB2w.git
-
+```
 
 Pronto agora com esse comando acima você clonou a pasta e tem todo acesso ao código do projeto, agora vamos rodar no terminal mais dois comandos para fazer o game funcionar na sua maquina:
 
 ```
 npm install
 ```
+```
 npm start
-
-
-End with an example of getting some data out of the system or using it for a little demo
-
+```
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Caso só queira jogar e ver o resultado do projeto visualmente acesse o link
 
 ## Built With
+* [Html](https://maven.apache.org/) - Dependency Management
+* [CSS](https://maven.apache.org/) - Dependency Management
+* [JS](https://maven.apache.org/) - Dependency Management
+* [React](https://maven.apache.org/) - Dependency Management
+* [Styled Components](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [React Router](https://maven.apache.org/) - Dependency Management
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Autor
 
 * **Rafael Moura** - [Linkedin](https://www.linkedin.com/in/rafaelmouradev/)
 
-## License
+## Considerações finais
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
 
 
