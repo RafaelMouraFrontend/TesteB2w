@@ -2,7 +2,7 @@
   <br>
   <a href="http://somos.b2wdigital.com/bit/"><img src="https://i.ibb.co/MnVtjyG/github.png" alt="Star Wars Test" width="700"></a>
   <br>
-  Star Wars Game B2W
+  Star Wars Game B2W :space_invader:
   <br>
 </h1>
 
@@ -10,8 +10,8 @@
 
 
 <p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
+  <a href="#introducao">Key Features</a> •
+  <a href="#pre-requisitos">How To Use</a> •
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
   <a href="#related">Related</a> •
@@ -20,55 +20,41 @@
 
 
 
-## Getting Started
+## Introdução
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Esse game ajuda a aprimorar seus conhecimentos sobre Star Wars, um jogo de adivinhação na qual você tenta advinhar um planeta aleotório da franquia e suas informações como, Polulação, clima, terreno e em quantos filmes ele apareceu! 
 
-### Prerequisites
+### Pré requisitos
 
-What things you need to install the software and how to install them
+Será necessário a instação do Node e Github em sua maquina
+
+* [Node](http://www.dropwizard.io/1.0.2/docs/) 
+
+* [Github](http://www.dropwizard.io/1.0.2/docs/) 
 
 ```
 Give examples
 ```
 
-### Installing
+### Rodando o projeto
 
-A step by step series of examples that tell you how to get a development env running
+Esse tópico é para caso queira rodar o game na sua maquina e ter acesso ao core do projeto;
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+Após a instação do node e github vamos precisar rodar alguns comandos no seu terminal de comando:
 
 ```
-until finished
+git clone https://github.com/RafaelMouraFrontend/TesteB2w.git
+
+```
+- Pronto agora com esse comando acima você clonou a pasta e tem todo acesso ao código do projeto, agora vamos rodar no terminal mais dois comandos para fazer o game funcionar na sua maquina:
+
+```
+npm install
+```
+npm start
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
@@ -80,27 +66,12 @@ Add additional notes about how to deploy this on a live system
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
+## Autor
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Rafael Moura** - [Linkedin](https://www.linkedin.com/in/rafaelmouradev/)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
