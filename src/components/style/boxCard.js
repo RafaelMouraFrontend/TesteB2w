@@ -2,12 +2,10 @@ import styled from 'styled-components';
 
 const BoxCard= styled.div`
     max-width: 400px;
-    height: 70%;
     margin: 0 auto;
     background: transparent;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 99999;
     position: relative;
     .loading{
         max-width:400px;
@@ -29,7 +27,7 @@ const BoxCard= styled.div`
             border: 1px solid #FFE81F;
         }  
         ul{
-            padding: 45px 0;
+            padding: 15px 0;
         }
         li{
             font-family: 'Roboto', sans-serif;
@@ -38,6 +36,14 @@ const BoxCard= styled.div`
             span{
                 font-weight: 700;
             }
+        }
+        p{
+            text-align: center;
+            font-family: 'Teko',sans-serif;
+            font-size: 4rem;
+            color: #F60505;
+            margin:0;
+
         }
     }
    

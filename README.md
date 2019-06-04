@@ -10,12 +10,13 @@
 
 
 <p align="center">
-  <a href="#introducao">Key Features</a> •
-  <a href="#pre-requisitos">How To Use</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
-  <a href="#license">License</a>
+  <a href="#Introdução">Introdução</a> •
+  <a href="#Pré-requisitos">Pré requisitos</a> •
+  <a href="#Rodando-o-projeto">Rodando o Projeto</a> •
+  <a href="#Deployment">Deployment</a> •
+  <a href="#Built-With">Built With</a> •
+  <a href="#Autor">Autor</a> •
+  <a href="#Considerações-finais">Considerações finais</a>
 </p>
 
 
@@ -26,11 +27,11 @@ Esse game ajuda a aprimorar seus conhecimentos sobre Star Wars, um jogo de adivi
 
 ### Pré requisitos
 
-Será necessário a instação do Node e Github em sua maquina
+Será necessário a instação do Node e Github em sua maquina.
 
-- * [Node](http://www.dropwizard.io/1.0.2/docs/) 
+- * [Node](https://nodejs.org/en/) 
 
-- * [Github](http://www.dropwizard.io/1.0.2/docs/) 
+- * [Github](https://help.github.com/en/desktop/getting-started-with-github-desktop/installing-github-desktop) 
 
 ### Rodando o projeto
 
@@ -50,17 +51,23 @@ npm install
 ```
 npm start
 ```
+Acesse no seu navegador de preferencia
+```
+http://localhost:3000/
+
+```
+
 ## Deployment
 
 Caso só queira jogar e ver o resultado do projeto visualmente acesse o link
 
 ## Built With
-* [Html](https://maven.apache.org/) - Dependency Management
-* [CSS](https://maven.apache.org/) - Dependency Management
-* [JS](https://maven.apache.org/) - Dependency Management
-* [React](https://maven.apache.org/) - Dependency Management
-* [Styled Components](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [React Router](https://maven.apache.org/) - Dependency Management
+* Html
+* CSS
+* JS
+* [React](hhttps://reactjs.org/) 
+* [Styled Components](https://www.styled-components.com/) 
+* [React Router](https://www.npmjs.com/package/react-router) 
 
 
 ## Autor
@@ -68,6 +75,13 @@ Caso só queira jogar e ver o resultado do projeto visualmente acesse o link
 * **Rafael Moura** - [Linkedin](https://www.linkedin.com/in/rafaelmouradev/)
 
 ## Considerações finais
+
+A proposta foi apresetar os meus conhecimentos como dev Frontend Junior e foi interessante para reforçar e aprender alguns conceitos como hooks, busquei criar uma arquitetura que seja facilmente escalavel.
+
+Foi muito legal fazer esse teste, espero que gostem! wink:
+
+OBS: Pode se futuramente ampliar e escalar amplicando as rotas e criando categorias para: Naves, especies, personagens... 
+
 
 
 

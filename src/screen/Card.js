@@ -52,7 +52,7 @@ export default function Card() {
           <li><span>Climate:</span> {items.climate}</li>
           <li><span>Terrains:</span> {items.terrain}</li>
         </ul>
-        <p>Films:{films}</p>
+        <p>Films: {films}</p>
       </div>  
       )}
            
