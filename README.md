@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="http://somos.b2wdigital.com/bit/"><img src="https://i.ibb.co/MnVtjyG/github.png" alt="Star Wars Test" width="200"></a>
+  <a href="http://somos.b2wdigital.com/bit/"><img src="https://i.ibb.co/MnVtjyG/github.png" alt="Star Wars Test" width="400"></a>
   <br>
   Star Wars Game B2W
   <br>
