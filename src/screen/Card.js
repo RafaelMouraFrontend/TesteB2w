@@ -5,7 +5,6 @@ import CardInfo from '../components/CardInfo/CardInfo'
 import BoxCard from '../components/style/boxCard'
 
 export default function Card(props) {
-
   return(
     <BoxCard>
       {props.isLoading ? (

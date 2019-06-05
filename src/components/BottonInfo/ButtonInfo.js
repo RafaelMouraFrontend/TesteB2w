@@ -12,8 +12,7 @@ import Buttons from '../style/buttons'
 
       <button onClick={ nextPlanet } className="btn btn-4">
         Next
-      </button>
-      
+      </button>   
     </Buttons>  
   );
   
