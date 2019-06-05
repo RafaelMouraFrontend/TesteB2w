@@ -2,12 +2,10 @@
   "name": "starwars-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://starwarsgameb2w.github.io",
   "engines": {
     "node": "10.16.0"
   },
   "dependencies": {
-    "axios": "^0.19.0",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -19,8 +17,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
