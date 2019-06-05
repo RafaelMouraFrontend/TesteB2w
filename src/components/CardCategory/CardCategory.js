@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import BoxCat from '../style/boxCat.js'
+import BoxCat from '../style/BoxCat'
 import planet from '../../assets/imgs/planet-earth.svg'
 
 

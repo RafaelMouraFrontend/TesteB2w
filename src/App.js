@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Home from './screen/Home';
 import Categories from './screen/Categories';
 import Card from './screen/Card';
-import ContainerIndex from './components/style/background'
+import ContainerIndex from './components/style/Background'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 
