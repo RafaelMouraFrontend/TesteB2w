@@ -1,6 +1,8 @@
 import React from 'react';
+import BoxCard from '../style/BoxCard'
 
   const CardInfo = ({items, films}) => (
+    <BoxCard>
     <div className="card">
       <h1>{items.name}</h1>
       <ul>
@@ -11,6 +13,7 @@ import React from 'react';
       </ul>
       <p>Films: {films}</p>
     </div>  
+    </BoxCard>
   );
   
 export default CardInfo
