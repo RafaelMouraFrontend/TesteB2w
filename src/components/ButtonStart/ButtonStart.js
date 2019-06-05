@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import Start from '../style/ButtonStart'
+import Start from '../style/buttonStart'
 
-  const ButtomStart = ({props}) => (
+  const ButtomStart = () => (
 
   <Link to="/categories">
       <Start>Start Game</Start>

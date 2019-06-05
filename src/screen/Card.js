@@ -3,41 +3,7 @@ import loading from '../assets/imgs/load.gif'
 import ButtonInfo from '../components/BottonInfo/ButtonInfo'
 import BoxCard from '../components/style/boxCard'
 
-export default function Card() {
-
-  const [items, setItens] = useState([])
-  const [isLoading, setIsLoading] = useState(false);
-  const [films, setFilms] = useState([])
-
-  const fetchItems =  React.useCallback(async () => {
-    setIsLoading(true);
-    let id = numberRandon(61)
-    const response = await fetch(
-      `https://swapi.co/api/planets/${id}/`
-    );
-    const items = await response.json()
-    items.name === 'unknown' ? fetchItems() : setItens(items)
-    setIsLoading(false)
-    const films = items.films.length
-    setFilms(films)
-    
-  },[])
-
-  useEffect(()=>{
-    fetchItems();
-  },[fetchItems])
-  
-  function nextPlanet() {
-    fetchItems();
-  }
-  
-  const numberRandon = num => {
-    let number = Math.floor(Math.random() * num + 1)
-    if(number === 0 || number === undefined)
-      this.getRandomNumber(num)
-    else
-      return number
-  }
+export default function Card({isLoading, items, films, nextPlanet}) {
 
   return(
     <BoxCard>

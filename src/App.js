@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Home from './screen/Home';
 import Categories from './screen/Categories';
 import Card from './screen/Card';
@@ -17,7 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
   body {
-    padding: 0;
     margin: 0;
     font-size: 1.5rem;
     line-height: 2;
@@ -33,6 +32,40 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export default function App() {
+
+  const [items, setItens] = useState([])
+  const [isLoading, setIsLoading] = useState(false);
+  const [films, setFilms] = useState([])
+
+  const fetchItems =  React.useCallback(async () => {
+    setIsLoading(true);
+    let id = numberRandon(61)
+    const response = await fetch(
+      `https://swapi.co/api/planets/${id}/`
+    );
+    const items = await response.json()
+    items.name === 'unknown' ? fetchItems() : setItens(items)
+    setIsLoading(false)
+    const films = items.films.length
+    setFilms(films)
+    
+  },[])
+
+  useEffect(()=>{
+    fetchItems();
+  },[fetchItems])
+  
+  function nextPlanet() {
+    fetchItems();
+  }
+  
+  const numberRandon = num => {
+    let number = Math.floor(Math.random() * num + 1)
+    if(number === 0 || number === undefined)
+      this.getRandomNumber(num)
+    else
+      return number
+  }
     
      return (
       <Router>
@@ -44,7 +77,14 @@ export default function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/categories" component={Categories} />
-          <Route path="/planet" component={Card} />
+          <Route path="/planet"  
+                  render={() => <Card  
+                                      isLoading={isLoading} 
+                                      items={items}
+                                      films={films}
+                                      nextPlanet={nextPlanet}
+
+                                      />} />
         </Switch>
         </ContainerIndex>
       </Router>
