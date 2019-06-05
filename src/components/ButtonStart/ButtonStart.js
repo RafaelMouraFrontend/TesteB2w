@@ -4,9 +4,9 @@ import Start from '../style/buttonStart.js'
 
   const ButtomStart = () => (
 
-  <Link to="/categories">
-      <Start>Start Game</Start>
-  </Link>
+  <Start><Link to="/categories">Start Game</Link></Start>
+  
+  
 
   );
   
