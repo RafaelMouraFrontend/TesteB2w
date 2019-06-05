@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Home from './screen/Home';
 import Categories from './screen/Categories';
 import Card from './screen/Card';
+import Background from './components/style/Background'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 
@@ -69,7 +70,7 @@ export default function App() {
      return (
       <Router>
         <GlobalStyle />
-        
+        <Background>
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
@@ -85,7 +86,7 @@ export default function App() {
 
                                       />} />
         </Switch>
-       
+        </Background>
       </Router>
     )
 }

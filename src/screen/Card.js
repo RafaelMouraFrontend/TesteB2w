@@ -14,7 +14,6 @@ export default function Card(props) {
       ) : (
         <CardInfo {...props} />
       )}
-           
       <ButtonInfo nextPlanet={props.nextPlanet}/>
     </BoxCard>
   )
