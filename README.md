@@ -58,11 +58,6 @@ http://localhost:3000/
 
 ```
 
-## Deployment
-O Continuous Deployment foi feito dentro do Netlify
-Caso só queira jogar e ver o resultado do projeto visualmente acesse o link:
-[starwarsgameb2w.netlify.com](https://starwarsgameb2w.netlify.com/) 
-
 ## Built With
 * Html
 * CSS
@@ -79,6 +74,8 @@ Caso só queira jogar e ver o resultado do projeto visualmente acesse o link:
 ## Considerações finais
 
 A proposta foi apresetar os meus conhecimentos como dev Frontend Junior e foi interessante para reforçar e aprender alguns conceitos como hooks, busquei criar uma arquitetura que seja facilmente escalavel.
+
+Com a proposta de Hooks busquei centralizar o fluxo unidirecional centralizando o estado de todos os componentes em um componente pai, para que possiveis bugs fossem facilmente localizados.
 
 Foi muito legal fazer esse teste, espero que gostem! :wink:
 
