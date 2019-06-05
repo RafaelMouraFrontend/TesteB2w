@@ -24,7 +24,7 @@
 
 ## Introdução
 
-Esse game ajuda a aprimorar seus conhecimentos sobre Star Wars, um jogo de adivinhação na qual você tenta advinhar um planeta aleotório da franquia e suas informações como, Polulação, clima, terreno e em quantos filmes ele apareceu! 
+Esse game ajuda a aprimorar seus conhecimentos sobre Star Wars, um jogo de adivinhação na qual você tenta descobrir um planeta aleotório da franquia e suas informações como, Polulação, clima, terreno e em quantos filmes ele apareceu! 
 
 ### Pré requisitos
 
@@ -73,9 +73,9 @@ http://localhost:3000/
 
 ## Considerações finais
 
-A proposta foi apresetar os meus conhecimentos como dev Frontend Junior e foi interessante para reforçar e aprender alguns conceitos como hooks, busquei criar uma arquitetura que seja facilmente escalavel.
+A proposta foi apresetar os meus conhecimentos como dev Frontend Junior, foi interessante também como forma de reforçar e aprender alguns conceitos como hooks, busquei criar uma arquitetura que seja facilmente escalavel.
 
-Com a proposta de Hooks busquei centralizar o fluxo unidirecional centralizando o estado de todos os componentes em um componente pai, para que possiveis bugs fossem facilmente localizados.
+Com a proposta de Hooks busquei centralizar o fluxo unidirecional, centralizando o estado de todos os componentes em um componente pai, para que possiveis bugs fossem facilmente localizados.
 
 Foi muito legal fazer esse teste, espero que gostem! :wink:
 
