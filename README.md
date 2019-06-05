@@ -4,6 +4,7 @@
   <br>
   Star Wars Game B2W :space_invader:
   <br>
+  <br>
 </h1>
 
 <h4 align="center">Desafio Técnico desenvolvido para a <a href="http://somos.b2wdigital.com/bit/" target="_blank">B2W</a>.</h4>
@@ -79,7 +80,7 @@ Caso só queira jogar e ver o resultado do projeto visualmente acesse o link:
 
 A proposta foi apresetar os meus conhecimentos como dev Frontend Junior e foi interessante para reforçar e aprender alguns conceitos como hooks, busquei criar uma arquitetura que seja facilmente escalavel.
 
-Foi muito legal fazer esse teste, espero que gostem! wink:
+Foi muito legal fazer esse teste, espero que gostem! :wink:
 
 OBS: Pode se futuramente ampliar e escalar amplicando as rotas e criando categorias para: Naves, especies, personagens... 
 
