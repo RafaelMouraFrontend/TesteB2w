@@ -1,28 +1,22 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import loading from '../assets/imgs/load.gif'
 import ButtonInfo from '../components/BottonInfo/ButtonInfo'
+import CardInfo from '../components/CardInfo/CardInfo'
 import BoxCard from '../components/style/boxCard'
 
-export default function Card({isLoading, items, films, nextPlanet}) {
+export default function Card(props) {
 
   return(
     <BoxCard>
-            {isLoading ? (
-        <div><img src={loading} alt="loading" className="loading"/></div>
+      {props.isLoading ? (
+        <div>
+          <img src={loading} alt="loading" className="loading"/>
+        </div>
       ) : (
-        <div className="card">
-        <h1>{items.name}</h1>
-        <ul>
-          <li><span>Diameter:</span> {items.diameter}</li>
-          <li><span>Population:</span> {items.population}</li>
-          <li><span>Climate:</span> {items.climate}</li>
-          <li><span>Terrains:</span> {items.terrain}</li>
-        </ul>
-        <p>Films: {films}</p>
-      </div>  
+        <CardInfo {...props} />
       )}
            
-      <ButtonInfo nextPlanet={nextPlanet}/>
+      <ButtonInfo nextPlanet={props.nextPlanet}/>
     </BoxCard>
   )
 }
