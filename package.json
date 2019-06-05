@@ -2,7 +2,7 @@
   "name": "starwars-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "hpps://starwarsgameb2w.github.io",
+  "homepage": "https://starwarsgameb2w.github.io",
   "engines": {
     "node": "10.16.0"
   },
