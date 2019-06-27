@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import bgStar from '../../assets/imgs/star.gif'
 
-const ContainerIndex = styled.div `
+const Background = styled.div `
   background-size: cover;
   height:100vh;
   padding: 0 20px;
@@ -14,4 +14,4 @@ const ContainerIndex = styled.div `
 
 `
 
-export default ContainerIndex;
+export default Background;
