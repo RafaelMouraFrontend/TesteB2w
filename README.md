@@ -44,13 +44,12 @@ Após a instação do node e github vamos precisar rodar alguns comandos no seu 
 git clone https://github.com/RafaelMouraFrontend/TesteB2w.git
 ```
 
-Pronto agora com esse comando acima você clonou a pasta e tem todo acesso ao código do projeto, agora vamos rodar no terminal mais dois comandos para fazer o game funcionar na sua maquina:
-
-```
-npm install
-```
+Pronto agora com esse comando acima você clonou a pasta e tem todo acesso ao código do projeto, agora vamos rodar no terminal mais alguns comandos para fazer o game funcionar na sua maquina:
 ```
 cd TesteB2w
+```
+```
+npm install
 ```
 ```
 npm start
