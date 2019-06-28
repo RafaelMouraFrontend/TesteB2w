@@ -50,13 +50,20 @@ Pronto agora com esse comando acima vocÃª clonou a pasta e tem todo acesso ao cÃ
 npm install
 ```
 ```
+cd TesteB2w
+```
+```
 npm start
 ```
+
 Acesse no seu navegador de preferencia
 ```
 http://localhost:3000/
 
 ```
+
+Ou se preferir entre no link online:
+https://starwarsdesafiob2w.netlify.com/
 
 ## Built With
 * Html
