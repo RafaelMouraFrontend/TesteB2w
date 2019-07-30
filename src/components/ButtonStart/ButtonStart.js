@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import Start from '../style/ButtonStart'
+import ButtonStart from '../style/ButtonStart'
 
-  const ButtomStart = ({props}) => (
-
+const ButtomStart = () => (
+  
   <Link to="/categories">
-      <Start>Start Game</Start>
+    <ButtonStart>
+      Start Game
+    </ButtonStart>
   </Link>
-
+  
   );
   
 export default ButtomStart

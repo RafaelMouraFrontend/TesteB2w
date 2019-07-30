@@ -4,7 +4,6 @@ const Buttons= styled.div`
    display: flex;
    justify-content: space-between;
    align-content: space-between;
-   
    button{
       font-family: 'Teko',sans-serif;
       font-size: 3.4rem;
@@ -15,34 +14,27 @@ const Buttons= styled.div`
       flex-basis: 49%;
       margin-top: 10px;
       padding: 05px 30px;
-      box-sizing:border-box;
-      
+      box-sizing:border-box;   
    }
    .link{
       flex-basis: 49%;
       color: #fff;
    }
-
    .btn {
       color: #fff;
       cursor: pointer;
       text-decoration: none;
       text-transform: uppercase;
-      width: 100%;
-      
-      &:hover { text-decoration: none; }
-      
+      width: 100%;   
+      &:hover { text-decoration: none; }  
       }
-
       .btn-4 {
       border: 1px solid;
       overflow: hidden;
       position: relative;
-      
          span {
             z-index: 20;
-         }
-         
+         }  
          &:after {
             background: #fff;
             content: "";
@@ -57,7 +49,6 @@ const Buttons= styled.div`
             z-index: -10;
          }
       }
-
       .btn-4:hover {         
          &:after {
             left: 120%;

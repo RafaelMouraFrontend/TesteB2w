@@ -4,6 +4,7 @@
   <br>
   Star Wars Game B2W :space_invader:
   <br>
+  <br>
 </h1>
 
 <h4 align="center">Desafio Técnico desenvolvido para a <a href="http://somos.b2wdigital.com/bit/" target="_blank">B2W</a>.</h4>
@@ -16,14 +17,13 @@
   <a href="#Deployment">Deployment</a> •
   <a href="#Built-With">Built With</a> •
   <a href="#Autor">Autor</a> •
-  <a href="#Considerações-finais">Considerações finais</a>
 </p>
 
 
 
 ## Introdução
 
-Esse game ajuda a aprimorar seus conhecimentos sobre Star Wars, um jogo de adivinhação na qual você tenta advinhar um planeta aleotório da franquia e suas informações como, Polulação, clima, terreno e em quantos filmes ele apareceu! 
+Esse game ajuda a aprimorar seus conhecimentos sobre Star Wars, um jogo de adivinhação na qual você tenta descobrir um planeta aleotório da franquia e suas informações como, Polulação, clima, terreno e em quantos filmes ele apareceu! 
 
 ### Pré requisitos
 
@@ -43,24 +43,23 @@ Após a instação do node e github vamos precisar rodar alguns comandos no seu 
 git clone https://github.com/RafaelMouraFrontend/TesteB2w.git
 ```
 
-Pronto agora com esse comando acima você clonou a pasta e tem todo acesso ao código do projeto, agora vamos rodar no terminal mais dois comandos para fazer o game funcionar na sua maquina:
-
+Pronto agora com esse comando acima você clonou a pasta e tem todo acesso ao código do projeto, agora vamos rodar no terminal mais alguns comandos para fazer o game funcionar na sua maquina:
+```
+cd TesteB2w
+```
 ```
 npm install
 ```
 ```
 npm start
 ```
+
 Acesse no seu navegador de preferencia
 ```
 http://localhost:3000/
-
 ```
 
-## Deployment
-O Continuous Deployment foi feito dentro do Netlify
-Caso só queira jogar e ver o resultado do projeto visualmente acesse o link:
-[starwarsgameb2w.netlify.com](https://starwarsgameb2w.netlify.com/) 
+Ou se preferir entre no link online: https://starwarsdesafiob2w.netlify.com/
 
 ## Built With
 * Html
@@ -77,14 +76,10 @@ Caso só queira jogar e ver o resultado do projeto visualmente acesse o link:
 
 ## Considerações finais
 
-A proposta foi apresetar os meus conhecimentos como dev Frontend Junior e foi interessante para reforçar e aprender alguns conceitos como hooks, busquei criar uma arquitetura que seja facilmente escalavel.
+A proposta foi apresetar os meus conhecimentos como dev Frontend Junior, foi interessante também como forma de reforçar e aprender alguns conceitos como hooks, busquei criar uma arquitetura que seja facilmente escalavel.
 
-Foi muito legal fazer esse teste, espero que gostem! wink:
+Com a proposta de Hooks busquei centralizar o fluxo unidirecional, centralizando o estado de todos os componentes em um componente pai, para que possiveis bugs fossem facilmente localizados.
 
-OBS: Pode se futuramente ampliar e escalar amplicando as rotas e criando categorias para: Naves, especies, personagens... 
+Foi muito legal fazer esse teste, espero que gostem! wink
 
-
-
-
-
-
+OBS: Pode se futuramente ampliar e escalar amplicando as rotas e criando categorias para: Naves, especies, personagens...

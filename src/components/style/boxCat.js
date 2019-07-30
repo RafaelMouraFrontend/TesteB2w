@@ -9,7 +9,6 @@ const BoxCat = styled.div`
     align-items: center;
     z-index: 99999;
     position: relative;
-       
     .card{
         background: transparent;
         border: 2px solid #FFE81F;
@@ -20,7 +19,6 @@ const BoxCat = styled.div`
         display: flex;
         flex-flow: column;
         justify-content: center;
-
         img{
             max-width: 40px;
             margin: 0 auto 15px;
@@ -32,7 +30,6 @@ const BoxCat = styled.div`
             line-height: 0.5;
         }
     }
-   
 `;
 
 export default BoxCat;
