@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import loading from '../assets/imgs/load.gif'
+import complete from '../assets/imgs/complete.gif'
 import ButtonInfo from '../components/BottonInfo/ButtonInfo'
 import BoxCard from '../components/style/boxCard'
 
@@ -35,10 +36,8 @@ export default function Card() {
     const items = await response.json()
     items.name === 'unknown' ? fetchItems() : setItens(items)
     setIsLoading(false)
+    tamArr >=61 ? setIsComplete(true) : setIsComplete(false) 
 
-    if(tamArr === 10){
-      setIsComplete(true)
-    }
     const films = items.films.length
     setFilms(films)
     
@@ -63,7 +62,12 @@ export default function Card() {
       {isLoading ? (
         <div><img src={loading} alt="loading" className="loading"/></div>
       ) : isComplete ? 
-      (<div className="card">Todos os plateas foras buscados</div>) 
+      (
+        <div className="card-complete">
+          <img src={complete} alt="comlete" className="complete"/>
+          Todos os plateas foras buscados
+        </div>
+      ) 
       : (
       <div className="card">
         <h1>{items.name}</h1>

@@ -46,6 +46,15 @@ const BoxCard= styled.div`
 
         }
     }
+    .card-complete{
+        width: 100%;
+        border: 2px solid #FFE81F;
+        color: #fff;
+        background: rgba(9, 10, 15, 0.83);
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    }   
    
 `;
 
