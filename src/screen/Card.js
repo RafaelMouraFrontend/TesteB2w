@@ -12,7 +12,6 @@ export default function Card() {
   const [arrayNumers, setArray] = useState([])
   
   const fetchItems =  React.useCallback(async () => {
-    
     setIsLoading(true)
     const tamUnique = [...new Set(arrayNumers)].length
 
@@ -63,14 +62,14 @@ export default function Card() {
 
   return(
     <BoxCard>
-      {isLoading ? (
-        <div><img src={loading} alt="loading" className="loading"/></div>
-      ) : isComplete ? 
-      (
+      {isComplete ? (
         <div className="card-complete">
-          <img src={complete} alt="comlete" className="complete"/>
-          Todos os plateas foras buscados
+          <img src={complete} alt="complete" className="complete"/>
+          <p>Todos os plateas foram buscados</p>
         </div>
+      ) : isLoading ? 
+      (
+        <div><img src={loading} alt="loading" className="loading"/></div>
       ) 
       : (
       <div className="card">
@@ -89,4 +88,3 @@ export default function Card() {
     </BoxCard>
   )
 }
-

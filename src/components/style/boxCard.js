@@ -8,7 +8,10 @@ const BoxCard= styled.div`
     transform: translateY(-50%);
     position: relative;
     .loading{
-        max-width:400px;
+        width:100%;
+    }
+    .complete{
+        width:100%;
     }
     .card{
         width: 100%;
@@ -54,6 +57,10 @@ const BoxCard= styled.div`
         display: flex;
         flex-flow: column;
         text-align: center;
+        p{
+        font-family: 'Teko',sans-serif;
+        font-size: 2.5rem;
+        }
     }   
    
 `;
