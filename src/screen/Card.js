@@ -9,7 +9,7 @@ export default function Card() {
   const [isLoading, setIsLoading] = useState(false)
   const [isComplete, setIsComplete] = useState(false);
   const [films, setFilms] = useState(0)
-  const [arrayNumers] = useState([])
+  const [arrayNumers, setArray] = useState([])
   
   const fetchItems =  React.useCallback(async () => {
     
@@ -36,8 +36,12 @@ export default function Card() {
     const items = await response.json()
     items.name === 'unknown' ? fetchItems() : setItens(items)
     setIsLoading(false)
-    tamArr >=61 ? setIsComplete(true) : setIsComplete(false) 
 
+    if(tamArr >= 61) {
+      setIsComplete(true)
+      setArray([])
+    }
+    
     const films = items.films.length
     setFilms(films)
     
