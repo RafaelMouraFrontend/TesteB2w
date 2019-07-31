@@ -5,21 +5,28 @@ import BoxCard from '../components/style/boxCard'
 
 export default function Card() {
   const [items, setItens] = useState([])
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false)
+  const [isComplete, setIsComplete] = useState(false);
   const [films, setFilms] = useState(0)
-
-  let arrayNumers = []
+  const [arrayNumers] = useState([])
   
   const fetchItems =  React.useCallback(async () => {
     
-    setIsLoading(true);
+    setIsLoading(true)
+    const tamUnique = [...new Set(arrayNumers)].length
+
     arrayNumers.push(numberRandon(61))
-
-     const unique = [...new Set(arrayNumers)];
     
-      let id = unique.slice(-1)
+    let unique = [...new Set(arrayNumers)]
+    let tamArr = unique.length 
+ 
+    while(tamUnique === tamArr){
+      arrayNumers.push(numberRandon(61))
+      unique = [...new Set(arrayNumers)]
+      tamArr = unique.length 
+    }
 
-      console.log(unique);
+    let id = unique.slice(-1)
       
     const response = await fetch(
       `https://swapi.co/api/planets/${id}/`
@@ -28,10 +35,14 @@ export default function Card() {
     const items = await response.json()
     items.name === 'unknown' ? fetchItems() : setItens(items)
     setIsLoading(false)
+
+    if(tamArr === 10){
+      setIsComplete(true)
+    }
     const films = items.films.length
     setFilms(films)
     
-  },[])
+  },[arrayNumers])
 
   useEffect(()=>{
     fetchItems();
@@ -51,8 +62,10 @@ export default function Card() {
     <BoxCard>
       {isLoading ? (
         <div><img src={loading} alt="loading" className="loading"/></div>
-      ) : (
-        <div className="card">
+      ) : isComplete ? 
+      (<div className="card">Todos os plateas foras buscados</div>) 
+      : (
+      <div className="card">
         <h1>{items.name}</h1>
         <ul>
           <li><span>Diameter:</span> {items.diameter}</li>
