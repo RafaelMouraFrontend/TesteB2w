@@ -65,7 +65,7 @@ export default function Card() {
       {isComplete ? (
         <div className="card-complete">
           <img src={complete} alt="complete" className="complete"/>
-          <p>Todos os plateas foram buscados</p>
+          <p>Todos os planetas foram buscados!</p>
         </div>
       ) : isLoading ? 
       (
