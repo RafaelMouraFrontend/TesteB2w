@@ -29,7 +29,7 @@ export default function Card() {
     let id = unique.slice(-1)
       
     const response = await fetch(
-      `https://swapi.co/api/planets/${id}/`
+      `https://swapi.dev/api/planets/${id}/`
     );
     
     const items = await response.json()

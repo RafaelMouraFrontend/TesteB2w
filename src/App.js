@@ -41,7 +41,7 @@ export default function App() {
     setIsLoading(true);
     let id = numberRandon(61)
     const response = await fetch(
-      `https://swapi.co/api/planets/${id}/`
+      `https://swapi.dev/api/planets/${id}/`
     );
     const items = await response.json()
     items.name === 'unknown' ? fetchItems() : setItens(items)
